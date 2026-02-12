@@ -1,5 +1,15 @@
 node_modules/
 build/
 prebuilds/
-npm-debug.log*
 
+# Build artifacts
+*.obj
+*.o
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
