@@ -2,6 +2,14 @@
 
 All notable changes to `hexcore-better-sqlite3` will be documented in this file.
 
+## [2.0.3] - 2026-08-02
+
+### Fixed
+
+- Drain the native prepared-statement registry without invalidating its iterator during `Database#close()` or garbage collection. This removes intermittent access violations when a session database owns multiple prepared statements.
+- Suppress destruction of the process-lifetime `SqliteError` constructor reference after the N-API environment has already shut down.
+- Add a 256-statement close regression covering the SessionStore lifecycle pattern used by HexCore.
+
 ## [2.0.2] - 2026-08-02
 
 ### Added
