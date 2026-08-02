@@ -1,6 +1,6 @@
 # HexCore Better-SQLite3
 
-N-API wrapper for SQLite, based on the [better-sqlite3](https://github.com/WiseLibs/better-sqlite3) binding layer. Part of **HikariSystem HexCore**.
+N-API wrapper for SQLite, based on the [better-sqlite3](https://github.com/WiseLibs/better-sqlite3) binding layer. Part of [HikariSystem HexCore](https://github.com/AkashaCorporation/HikariSystem-HexCore).
 
 ## Architecture
 
@@ -66,6 +66,9 @@ db.exec('CREATE TABLE kv (id INTEGER PRIMARY KEY, value TEXT)');
 db.prepare('INSERT INTO kv(value) VALUES (?)').run('hello');
 const row = db.prepare('SELECT value FROM kv WHERE id = 1').get();
 console.log(row.value); // 'hello'
+
+const value = db.prepare('SELECT value FROM kv WHERE id = 1').pluck().get();
+console.log(value); // 'hello'
 db.close();
 ```
 

@@ -1,5 +1,6 @@
 /**
  * HexCore Better-SQLite3 - ESM Wrapper
+ * ECMAScript Module support for modern Node.js
  *
  * Copyright (c) HikariSystem. All rights reserved.
  * Licensed under MIT License.

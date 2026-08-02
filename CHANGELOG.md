@@ -2,6 +2,19 @@
 
 All notable changes to `hexcore-better-sqlite3` will be documented in this file.
 
+## [2.0.2] - 2026-08-02
+
+### Added
+
+- `Statement#pluck()` support for returning the first result column directly.
+- Native coverage for enabling, disabling, and composing `pluck()`, `raw()`, and `expand()` modes.
+
+### Fixed
+
+- Synchronized the standalone wrapper with the HexCore production source.
+- Hardened native-addon discovery across local Release/Debug builds and N-API prebuild naming conventions.
+- Improved the diagnostic emitted when the JavaScript database layer is loaded without the root addon loader.
+
 ## [2.0.0] - 2026-02-14
 
 ### Added

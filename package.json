@@ -1,6 +1,6 @@
 {
   "name": "hexcore-better-sqlite3",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "HexCore N-API wrapper for SQLite (better-sqlite3 fork)",
   "main": "./index.js",
   "module": "./index.mjs",
@@ -28,16 +28,16 @@
     "native",
     "napi"
   ],
-  "author": "HikariSystem <hikarisystem@example.com>",
+  "author": "HikariSystem",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LXrdKnowkill/hexcore-better-sqlite3.git"
+    "url": "https://github.com/AkashaCorporation/hexcore-better-sqlite3.git"
   },
   "bugs": {
-    "url": "https://github.com/LXrdKnowkill/hexcore-better-sqlite3/issues"
+    "url": "https://github.com/AkashaCorporation/hexcore-better-sqlite3/issues"
   },
-  "homepage": "https://github.com/LXrdKnowkill/hexcore-better-sqlite3#readme",
+  "homepage": "https://github.com/AkashaCorporation/hexcore-better-sqlite3#readme",
   "engines": {
     "vscode": "^1.0.0",
     "node": ">=18.0.0"
@@ -54,14 +54,15 @@
     "index.js",
     "index.mjs",
     "index.d.ts",
+    "CHANGELOG.md",
     "README.md"
   ],
   "binary": {
     "napi_versions": [8]
   },
   "devDependencies": {
-    "node-addon-api": "^7.0.0",
-    "node-gyp": "^10.0.0",
+    "node-addon-api": "^8.0.0",
+    "node-gyp": "^12.4.0",
     "prebuildify": "^6.0.0",
     "prebuild-install": "^7.1.1"
   }
